@@ -23,3 +23,11 @@ console.log(challenge.charCodeAt("j"));
 console.log(challenge.indexOf("a"));
 
 console.log(challenge.lastIndexOf("a"));
+
+let frase = 'Você não pode terminar uma frase com porque porque porque é uma conjunção'
+
+console.log(frase.indexOf('porque'));
+
+console.log(frase.lastIndexOf('porque'));
+
+console.log(frase.search('porque'));
