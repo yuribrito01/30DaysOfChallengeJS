@@ -29,12 +29,10 @@ console.log(challenge.lastIndexOf("a"));
 let frase = 'Você não pode terminar uma frase com porque porque porque é uma conjunção'
 console.log(frase.indexOf('porque'));
 
-//Use lastIndexOf para encontrar a posição da última ocorrência da palavra porque na seguinte frase: 
-//'Você não pode terminar uma frase com porque porque porque é uma conjunção'
+//Use lastIndexOf para encontrar a posição da última ocorrência da palavra porque na frase
 console.log(frase.lastIndexOf('porque'));
 
-//Use a pesquisa para encontrar a posição da primeira ocorrência da palavra porque na frase a seguir: 
-//'Você não pode terminar uma frase com porque porque porque é uma conjunção'
+//Use a pesquisa para encontrar a posição da primeira ocorrência da palavra porque na frase
 console.log(frase.search('porque'));
 
 //Verifique se 'on' é encontrado em python e jargão
