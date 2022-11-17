@@ -20,10 +20,19 @@ console.log(palavraPorque.length); //3
 
 const sentence = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is no@th@ing; &as& mo@re rewarding as educa@ting &and& @emp%o@weri@ng peo@ple. ;I found tea@ching m%o@re interesting tha@n any ot#her %jo@bs. %Do@es thi%s mo@tiv#ate yo@u to be a tea@cher!? %Th#is 30#Days&OfJavaScript &is al@so $the $resu@lt of &love& of tea&ching'
 
-sentenceClear = sentence.replace(/[%-&-#-@]/g, '');
+let sentenceClear = sentence.replace(/[%-&-#-@]/g, ''); //
 
-sentenceClear = sentenceClear.split(' ');
+//sentenceClear = sentenceClear.split(' ');
 
-console.log(sentenceClear)
+console.log(sentenceClear) 
 
+// 4. Calcule a renda anual total da pessoa extraindo os números do texto a seguir.
+// 'Ele ganha 5.000 euros de salário por mês, 10.000 euros de bônus anual, 15.000 euros de cursos online por mês.'
 
+let frase3 = 'Ele ganha 5.000 euros de salário por mês, 10.000 euros de bônus anual, 15.000 euros de cursos online por mês.';
+let tiraPonto = frase3.replace(/[.]/g,''); //Aqui estou tirando os pontos dos numeros
+let numerosDaSenteca = tiraPonto.match(/\d+/g) //'5000', '10000', '15000'
+//numerosDaSenteca = parseInt(numerosDaSenteca);
+let rendaAnual = ((numerosDaSenteca[0]*12) + (+numerosDaSenteca[1]) + (numerosDaSenteca[2]*12));
+
+console.log(`A renda anual total dessa pessoa é de ${rendaAnual} Euros`); //A renda anual total dessa pessoa é de 250000 Euros
