@@ -31,4 +31,4 @@ switch(mes){
         break;
 }
 
-console.log(`Esse mes possui ${days} dias`);
+console.log(`Esse mes possui ${days} dias`);//Esse mes possui 30 dias
